@@ -524,6 +524,9 @@ nav {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  @media only screen and (max-width: 799px) {
+    .bg {
+      display: none !important; } }
   .bg .slick-list,
   .bg .slick-track {
     height: 100%; }
