@@ -1,1 +1,0 @@
-jQuery(document).ready(function($){var e=$(".bg");console.log("ready"),$(".bg").slick({fade:!0,arrows:!1,dots:!1,speed:"0",autoplay:!0,autoplaySpeed:2e3})});

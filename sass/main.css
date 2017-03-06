@@ -418,16 +418,10 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  align-items: center;
+  justify-content: center; }
   .landing svg {
     max-width: 50vw; }
 
@@ -436,11 +430,8 @@ nav {
   bottom: 0;
   left: 0;
   right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   padding: 2rem; }
   nav a {
     display: inline-block;
@@ -454,11 +445,8 @@ nav {
   position: fixed;
   top: 0;
   left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  justify-content: space-around; }
   #hourglass svg {
     width: 50%;
     vertical-align: middle; }
@@ -469,11 +457,8 @@ nav {
   position: fixed;
   top: 0;
   right: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around; }
+  justify-content: space-around; }
   #clock svg {
     width: 50%;
     vertical-align: middle; }
@@ -484,26 +469,16 @@ nav {
   top: 0;
   height: 10vh;
   margin-left: 30vw;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center; }
+  justify-content: space-around;
+  align-content: center;
+  align-items: center; }
   #moons svg {
     padding: 1px;
-    -ms-flex-preferred-size: 1;
-        flex-basis: 1;
+    flex-basis: 1;
     height: 15px;
-    -ms-flex-line-pack: center;
-        align-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    align-content: center;
+    align-items: center; }
 
 .bg {
   position: fixed;
@@ -514,23 +489,18 @@ nav {
   left: 5vw;
   right: 5vw;
   bottom: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   text-align: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center; }
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 799px) {
+    .bg {
+      display: none; } }
   .bg .slick-list,
   .bg .slick-track {
     height: 100%; }
   .bg img {
     height: 100%;
     width: 100%;
-    -o-object-fit: scale-down;
-       object-fit: scale-down;
-    -o-object-position: center center;
-       object-position: center center; }
+    object-fit: scale-down;
+    object-position: center center; }
