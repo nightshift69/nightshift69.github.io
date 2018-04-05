@@ -45,10 +45,12 @@ html, body {
 }
 
 #moon{
-    width: 100%;
+    width: auto;
     height: 100%;
     border-radius: 100%;
     border: 1px solid white;
+    margin: auto;
+    display: block;
 }
 
 #moon-hover{
