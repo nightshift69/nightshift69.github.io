@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Page Not Found</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+
+        * {
+            line-height: 1.2;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            color: #fff;
+            display: table;
+            font-family: "Helvetica", "Helvetica Neue", "Arial", sans-serif;
+            height: 100%;
+            text-align: center;
+            width: 100%;
+            padding: 0;
+            background-color: black;
+        }
+
+        body {
+            display: table-cell;
+            vertical-align: middle;
+            margin: 2em auto;
+        }
+        
+        @keyframes rotate{
+            from {transform: rotate(0deg);}
+            to {transform: rotate(360deg);}
+        }
+
+        #circle{
+            animation: rotate 5s linear infinite;
+            width: 100px;
+            padding: 10px;
+            display: block;
+            margin: auto;
+        }
+        
+        #notfound{
+            width: 300px;
+            display:block;
+            margin: auto;
+        }
+
+        @media only screen and (max-width: 280px) {
+
+        }
+
+    </style>
+</head>
+<body>
+    <img id="circle" src="/img/circle.svg">
+    <img id="notfound" src="/img/404-21.svg">
+</body>
+</html>
+<!-- IE needs 512+ bytes: http://blogs.msdn.com/b/ieinternals/archive/2010/08/19/http-error-pages-in-internet-explorer.aspx -->
