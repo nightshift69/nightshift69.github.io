@@ -36,8 +36,10 @@ html, body {
 }
 
 #moon-wrapper{
-    position: absolute;
+    position: relative;
+    display: block;
     top: 30px;
+    float: right;
     right: 30px;
     height: 125px;
     width: 125px;
@@ -60,9 +62,12 @@ html, body {
     height: 99%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     border-radius: 100%;
-    box-shadow: 0px 0px 25px 5px white;
+    -webkit-box-shadow: 0px 0px 25px 5px white;
+            box-shadow: 0px 0px 25px 5px white;
 }
 
 #moon-wrapper:hover #moon-hover{
@@ -89,7 +94,6 @@ html, body {
     min-width: 100%;
     min-height: 100%;
     -webkit-transform: translate(-50%, -50%);
-       -moz-transform: translate(-50%, -50%);
         -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
@@ -132,14 +136,18 @@ html, body {
 @media only screen and (max-width: 900px) and (orientation: portrait){
     
     #moon-wrapper{
-        width: 100%;
-        right: 0;
         height: 80px;
+        width: 80px;
+        margin: auto;
+        float: none;  
+        right: 0;
     }
     
     #water{
         width: 250%;
-        transform: translate(-50%, -40%);
+        -webkit-transform: translate(-50%, -40%);
+            -ms-transform: translate(-50%, -40%);
+                transform: translate(-50%, -40%);
     }
 }
 
@@ -149,8 +157,8 @@ html, body {
 {
     
     #moon-wrapper{
-        width: 60px;
-        height: 60px;
+        width: 50px;
+        height: 50px;
         top: 10px;
         right: 10px;
     }
